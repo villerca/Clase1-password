@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villerca/Clase1-password.git"
+  },
+  "bugs": {
+    "url": "https://github.com/villerca/Clase1-password/issues"
+  },
+  "homepage": "https://github.com/villerca/Clase1-password#readme"
+}
