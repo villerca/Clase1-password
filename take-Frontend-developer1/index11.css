@@ -1,0 +1,87 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #acd9b2;
+    --dark: #232830;
+    --white: #ffffff;
+    --black: #000000;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+      
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    
+  }
+  nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    padding: 0px 40px;
+    place-items: center;
+    border-bottom: 1px solid var(--text-input-field);
+    justify-items: left;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .logo {
+    width: 150px;
+    height: 50px;
+  }
+  nav .products,
+  nav .email {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+  }
+  nav .products li {
+    margin: 0px 4px;
+  }
+  
+  nav .products li a,
+  nav .email li a {
+    text-decoration: none;
+    padding: 4px 16px;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+  }
+  
+  nav .products li a:hover,
+  nav .email li a:hover {
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+    color: var(--hospital-green);
+  }
+  
+  nav .email li p {
+    color: var(--dark);
+    font-weight: 300;
+    margin-right: 20px;
+  }
+  nav .cart {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  
+  @media (max-width:640px) {
+    nav .products,
+    nav .email {
+      display: none;
+    }
+    nav .logo {
+      width: 100px;
+      height: 30px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 16px;
+    }
+    nav .menu {
+      display: block;
+    }
+  
+  }
